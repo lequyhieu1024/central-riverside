@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức & Sự Kiện Central Riverside Thanh Hóa - Cập Nhật 24/7</title>
+    <meta name="description"
+        content="Cập nhật tin tức mới nhất về tiến độ, bảng giá và các dự án liên quan đến Central Riverside Thanh Hóa.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../style.css">
+    <script src="../assets.js"></script>
+    <style>
+        .news-item {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            height: 100%;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .news-content {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .news-date {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+
+        .news-title {
+            font-size: 17px;
+            line-height: 1.4;
+            margin-bottom: 15px;
+            color: var(--primary-blue);
+        }
+
+        .news-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .news-excerpt {
+            font-size: 13.5px;
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .news-more {
+            margin-top: auto;
+            color: var(--accent-gold);
+            font-weight: 700;
+            font-size: 13px;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" class="is-sticky">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <a href="/">
+                        <img src="" data-asset="logo" alt="Central Riverside Thanh Hóa">
+                    </a>
+                </div>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="/">Trang Chủ</a></li>
+                        <li><a href="/vi-tri/">Vị Trí</a></li>
+                        <li><a href="/tien-ich/">Tiện Ích</a></li>
+                        <li><a href="/mat-bang/">Mặt Bằng</a></li>
+                        <li><a href="/gia-ban/">Giá Bán</a></li>
+                        <li><a href="/tin-tuc/">Tin tức</a></li>
+                        <li><a href="/#contact">Liên Hệ</a></li>
+                    </ul>
+                </nav>
+                <div id="mobile-toggle" class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+    <div id="mobile-menu" class="mobile-menu">
+        <div style="text-align: right; margin-bottom: 20px;">
+            <i id="close-mobile" class="fas fa-times" style="font-size: 24px; cursor: pointer;"></i>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+            <a href="/" style="font-weight: 700; text-transform: uppercase;">Trang Chủ</a>
+            <a href="/vi-tri/" style="font-weight: 700; text-transform: uppercase;">Vị Trí</a>
+            <a href="/tien-ich/" style="font-weight: 700; text-transform: uppercase;">Tiện Ích</a>
+            <a href="/mat-bang/" style="font-weight: 700; text-transform: uppercase;">Mặt Bằng</a>
+            <a href="/gia-ban/" style="font-weight: 700; text-transform: uppercase;">Giá Bán</a>
+            <a href="/tin-tuc/" style="font-weight: 700; text-transform: uppercase;">Tin tức</a>
+            <a href="/#contact" style="font-weight: 700; text-transform: uppercase;">Liên Hệ</a>
+        </div>
+    </div>
+
+    <main style="margin-top: 120px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>TIN TỨC DỰ ÁN</h2>
+            </div>
+
+            <div class="row" style="row-gap: 30px;">
+                <!-- 1 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2026/03/the-intercentral-dong-anh-4-600x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">24 Th3</div>
+                            <h3 class="news-title"><a href="/bai-viet/chi-tiet/the-intercentral/">The InterCentral - Khu
+                                    đô thị Hateco Đông Anh</a></h3>
+                            <p class="news-excerpt">The InterCentral là tên gọi chính thức của Khu đô thị Hateco Đông
+                                Anh là dự án trọng điểm tại cửa ngõ phía Bắc thủ đô...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2025/10/viet-yen-riverside-2-600x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">30 Th10</div>
+                            <h3 class="news-title"><a href="/bai-viet/chi-tiet/viet-yen-riverside/">Việt Yên Riverside
+                                    Bắc Giang</a></h3>
+                            <p class="news-excerpt">Việt Yên Riverside là khu đô thị quy mô và quy hoạch bài bản bậc
+                                nhất tại Bắc Giang, mang lại cơ hội đầu tư sinh lời cao...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2025/09/taseco-1283-giai-phong-688x400.jpeg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">22 Th9</div>
+                            <h3 class="news-title"><a href="/bai-viet/chi-tiet/taseco-giai-phong/">Taseco Giải Phóng -
+                                    Căn hộ cao cấp 1283 Giải Phóng</a></h3>
+                            <p class="news-excerpt">Taseco Giải Phóng là dự án căn hộ cao cấp tọa lạc tại số 1283 Giải
+                                Phóng, sở hữu kết nối vùng thuận tiện và tiện ích hiện đại...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2025/09/taseco-trung-van-711x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">04 Th9</div>
+                            <h3 class="news-title">Taseco Trung Văn - Quỹ đất nội đô khan hiếm</h3>
+                            <p class="news-excerpt">Trong bối cảnh quỹ đất nội đô Hà Nội ngày càng khan hiếm, Taseco
+                                Trung Văn nổi lên như một điểm sáng an cư và đầu tư...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2025/05/masteri-rivera-da-nang-3-711x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">25 Th5</div>
+                            <h3 class="news-title">Masteri Rivera Đà Nẵng – Căn hộ cao cấp bên sông Hàn</h3>
+                            <p class="news-excerpt">Masteri Rivera Đà Nẵng là dự án mới thuộc bộ sưu tập phong cách sống
+                                chuẩn quốc tế, mang lại trải nghiệm sống thượng lưu...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2025/05/capital-square-danang-2-711x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">22 Th5</div>
+                            <h3 class="news-title">BRG Capital Square Đà Nẵng – Phong cách sống tinh hoa</h3>
+                            <p class="news-excerpt">BRG Capital Square Đà Nẵng là dự án bất động sản cao cấp do BRG
+                                Group phát triển, hội tụ những giá trị sống khác biệt...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 7 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2025/04/khu-do-thi-sao-mai-lam-son-sao-vang-tho-xuan-711x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">21 Th4</div>
+                            <h3 class="news-title">Sao Mai Residence – Khu đô thị Sao Mai Lam Sơn Sao Vàng</h3>
+                            <p class="news-excerpt">Sao Mai Residence là tên gọi chính thức của khu đô thị Sao Mai Lam
+                                Sơn, góp phần thay đổi diện mạo khu vực Thọ Xuân...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 8 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2025/03/noble-palace-rvierside-cam-dinh-phuc-tho-1-717x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">03 Th3</div>
+                            <h3 class="news-title">Noble Palace Riverside – Tuyệt Tác Biệt Thự Bên Sông Đáy</h3>
+                            <p class="news-excerpt">Hà Nội lại đón thêm một biểu tượng sống mới, Noble Palace Riverside
+                                mang đến không gian sống yên bình bên dòng sông Đáy...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 9 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2025/02/central-avenue-luc-nam-1-711x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">09 Th2</div>
+                            <h3 class="news-title">Central Avenue Lục Nam - Vị trí chiến lược cửa ngõ Bắc Giang</h3>
+                            <p class="news-excerpt">Tọa lạc tại vị trí chiến lược, ngay cửa ngõ thành phố Bắc Giang,
+                                Central Avenue Lục Nam đón đầu làn sóng dịch chuyển khu công nghiệp...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 10 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2024/11/tien-ich-central-square-711x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">14 Th11</div>
+                            <h3 class="news-title">Central Square Phổ Yên – Phong cách sống đẳng cấp</h3>
+                            <p class="news-excerpt">Central Square Phổ Yên không chỉ là một dự án bất động sản thông
+                                thường mà còn là biểu tượng sống mới của Thái Nguyên...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 11 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2024/10/the-heritage-tan-thanh-ha-nam-1-711x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">10 Th10</div>
+                            <h3 class="news-title">The Heritage Tân Thanh – Cơ hội đầu tư tại Hà Nam</h3>
+                            <p class="news-excerpt">Thị trường bất động sản Hà Nam đang trở nên sôi động hơn bao giờ hết
+                                với sự góp mặt của The Heritage Tân Thanh...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 12 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2024/09/nghi-son-central-park-1-638x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">01 Th9</div>
+                            <h3 class="news-title">Nghi Sơn Central Park - Khu đô thị xanh tại lõi Nghi Sơn</h3>
+                            <p class="news-excerpt">Nghi Sơn Central Park là một dự án khu đô thị xanh nằm tại lõi thị
+                                xã Nghi Sơn, đáp ứng nhu cầu ở cao cấp của chuyên gia...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 13 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2023/11/shophouse-central-riverside-thanh-hoa-3-727x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">21 Th2</div>
+                            <h3 class="news-title">Nội thất bàn giao Central Riverside Thanh Hóa</h3>
+                            <p class="news-excerpt">Dự án Central Riverside Thanh Hóa được thiết kế bởi INNO, đảm bảo
+                                chất lượng bàn giao cao cấp nhất phân khúc...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 14 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2024/01/central-riverside-thanh-hoa-2-727x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">24 Th11</div>
+                            <h3 class="news-title">Phối cảnh Central Riverside Thanh Hóa</h3>
+                            <p class="news-excerpt">Cùng chiêm ngưỡng những hình ảnh phối cảnh tuyệt đẹp của khu đô thị
+                                đẳng cấp nhất TP Thanh Hóa hiện nay...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 15 -->
+                <div class="col large-4">
+                    <div class="news-item">
+                        <img src="https://central-riverside.com/wp-content/uploads/2024/01/vi-tri-central-riverside-thanh-hoa-697x400.jpg"
+                            class="news-img" alt="News">
+                        <div class="news-content">
+                            <div class="news-date">21 Th11</div>
+                            <h3 class="news-title">Vị trí Vàng Central Riverside Thanh Hóa</h3>
+                            <p class="news-excerpt">Dự án nằm ở vị trí chiến lược, trung tâm hành chính mới, đối diện
+                                Vinhomes Star City...</p>
+                            <span class="news-more">Xem thêm →</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;">
+                <p style="color: #999;">Hiển thị 15 / 26 bài viết</p>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #111; color: white; padding: 30px 0 30px; margin-top: 100px;">
+        <div class="container" style="text-align: center; font-size: 12px;">
+            <p>&copy; 2024 Central Riverside. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

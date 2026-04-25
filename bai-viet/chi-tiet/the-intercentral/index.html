@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The InterCentral – Khu đô thị Hateco Đông Anh - Tin Tức Dự Án</title>
+    <meta name="description"
+        content="Chi tiết về dự án The InterCentral Đông Anh - Khu đô thị TOD quy mô 44ha của Tập đoàn Hateco.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../../../style.css">
+    <script src="../../../assets.js"></script>
+    <style>
+        .article-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 15px;
+        }
+
+        .article-header {
+            margin-bottom: 30px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        .article-title {
+            font-size: 32px;
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+            line-height: 1.3;
+        }
+
+        .article-meta {
+            font-size: 14px;
+            color: #999;
+            display: flex;
+            gap: 20px;
+        }
+
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+            font-size: 16px;
+        }
+
+        .article-content h3 {
+            color: var(--primary-teal);
+            margin: 35px 0 15px;
+            font-size: 22px;
+        }
+
+        .article-content p {
+            margin-bottom: 20px;
+        }
+
+        .article-content img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+            display: block;
+        }
+
+        .spec-box {
+            background: #f9f9f9;
+            padding: 25px;
+            border-radius: 10px;
+            border-left: 5px solid var(--accent-gold);
+            margin: 30px 0;
+        }
+
+        .spec-box ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .spec-box li strong {
+            width: 150px;
+            display: inline-block;
+        }
+
+        .sidebar-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 120px;
+        }
+
+        .breadcrumb {
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #777;
+        }
+
+        .breadcrumb a {
+            color: #777;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--accent-gold);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="header" class="is-sticky">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <a href="/">
+                        <img src="" data-asset="logo" alt="Central Riverside Thanh Hóa">
+                    </a>
+                </div>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="/">Trang Chủ</a></li>
+                        <li><a href="/vi-tri/">Vị Trí</a></li>
+                        <li><a href="/tien-ich/">Tiện Ích</a></li>
+                        <li><a href="/mat-bang/">Mặt Bằng</a></li>
+                        <li><a href="/gia-ban/">Giá Bán</a></li>
+                        <li><a href="/tin-tuc/">Tin tức</a></li>
+                        <li><a href="/#contact">Liên Hệ</a></li>
+                    </ul>
+                </nav>
+                <div id="mobile-toggle" class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+    <div id="mobile-menu" class="mobile-menu">
+        <div style="text-align: right; margin-bottom: 20px;">
+            <i id="close-mobile" class="fas fa-times" style="font-size: 24px; cursor: pointer;"></i>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+            <a href="/" style="font-weight: 700; text-transform: uppercase;">Trang Chủ</a>
+            <a href="/vi-tri/" style="font-weight: 700; text-transform: uppercase;">Vị Trí</a>
+            <a href="/tien-ich/" style="font-weight: 700; text-transform: uppercase;">Tiện Ích</a>
+            <a href="/mat-bang/" style="font-weight: 700; text-transform: uppercase;">Mặt Bằng</a>
+            <a href="/gia-ban/" style="font-weight: 700; text-transform: uppercase;">Giá Bán</a>
+            <a href="/tin-tuc/" style="font-weight: 700; text-transform: uppercase;">Tin tức</a>
+            <a href="/#contact" style="font-weight: 700; text-transform: uppercase;">Liên Hệ</a>
+        </div>
+    </div>
+
+    <main style="margin-top: 120px;">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="/">Trang chủ</a> » <a href="/tin-tuc/">Tin tức</a> » <span>The InterCentral</span>
+            </div>
+            <div class="row">
+                <div class="col large-8">
+                    <article class="article-container" style="padding: 0;">
+                        <div class="article-header">
+                            <div
+                                style="margin-bottom: 10px; font-size: 13px; color: var(--accent-gold); font-weight: 700;">
+                                TIN TỨC DỰ ÁN</div>
+                            <h1 class="article-title">The InterCentral – Khu đô thị Hateco Đông Anh</h1>
+                            <div class="article-meta">
+                                <span><i class="far fa-calendar-alt"></i> 24 Tháng Ba, 2026</span>
+                                <span><i class="far fa-folder"></i> Tin tức</span>
+                            </div>
+                        </div>
+
+                        <div class="article-content">
+                            <p><strong>The InterCentral</strong> là tên gọi chính thức của Khu đô thị Hateco Đông Anh là
+                                dự án khu đô thị theo mô hình Transit Oriented Development (TOD) do Tập đoàn Hateco làm
+                                chủ đầu tư, tọa lạc tại vị trí chiến lược trên địa bàn xã Vĩnh Thanh, huyện Đông Anh.
+                            </p>
+
+                            <img src="https://central-riverside.com/wp-content/uploads/2026/03/the-intercentral-dong-anh-4.jpg"
+                                alt="Dự án The InterCentral">
+
+                            <p>Với quy mô 44 ha và tổng vốn đầu tư hơn 25.000 tỷ đồng, The InterCentral Đông Anh không
+                                chỉ là một khu đô thị mà còn là biểu tượng của đô thị hiện đại, bền vững, gắn kết chặt
+                                chẽ với hệ thống giao thông công cộng tương lai.</p>
+
+                            <h3>TỔNG QUAN DỰ ÁN</h3>
+                            <div class="spec-box">
+                                <ul>
+                                    <li><strong>Tên dự án:</strong> The InterCentral</li>
+                                    <li><strong>Vị trí dự án:</strong> Đường Võ Văn Kiệt, Xã Vĩnh Thanh, huyện Đông
+                                        Anh, Hà Nội</li>
+                                    <li><strong>Chủ đầu tư:</strong> Tập đoàn Hateco Group</li>
+                                    <li><strong>Tổng diện tích:</strong> 44ha</li>
+                                    <li><strong>Mật độ xây dựng:</strong> 30%</li>
+                                    <li><strong>Quy mô:</strong> 10 tòa tháp (45–60 tầng), Shophouse, Biệt thự</li>
+                                    <li><strong>Pháp lý:</strong> Sổ hồng lâu dài</li>
+                                </ul>
+                            </div>
+
+                            <h3>VỊ TRÍ ĐẮC ĐỊA</h3>
+                            <p>The InterCentral tọa lạc ngay tại giao lộ Võ Văn Kiệt – Hoàng Sa, kết nối trực tiếp Sân
+                                bay Nội Bài, Cầu Thăng Long và Trung tâm Hà Nội. Đặc biệt, dự án kết nối trực tiếp với
+                                nhà ga dự kiến của Metro số 4 và Metro số 6, tạo nên giá trị gia tăng vượt trội theo mô
+                                hình TOD.</p>
+                            <img src="https://central-riverside.com/wp-content/uploads/2026/03/the-intercentral-dong-anh-vi-tri.jpg"
+                                alt="Vị trí The InterCentral">
+
+                            <h3>TIỆN ÍCH ĐẲNG CẤP</h3>
+                            <p>Hơn 7,2 ha hồ điều hòa và gần 4 ha công viên cây xanh mang lại không gian sống trong
+                                lành. Hệ thống tiện ích bao gồm: Sân tennis, bóng rổ, pickleball, vườn yoga, skywalk và
+                                TTTM hiện đại.</p>
+                            <img src="https://central-riverside.com/wp-content/uploads/2026/03/the-intercentral-dong-anh-tien-ich.jpg"
+                                alt="Tiện ích">
+
+                            <h3>MẶT BẰNG & SẢN PHẨM</h3>
+                            <p>Dự án cung cấp đa dạng loại hình sản phẩm từ căn hộ chung cư cao cấp đến Shophouse và
+                                Biệt thự ven hồ. Thiết kế theo phong cách hiện đại, tối ưu hóa công năng và ánh sáng tự
+                                nhiên.</p>
+                            <img src="https://central-riverside.com/wp-content/uploads/2026/03/mat-bang-the-intercentral-dong-anh-ha-noi.jpg"
+                                alt="Mặt bằng">
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="col large-4">
+                    <div class="sidebar-box">
+                        <h4
+                            style="color: var(--primary-blue); margin-bottom: 20px; border-bottom: 2px solid var(--accent-gold); padding-bottom: 10px;">
+                            NHẬN THÔNG TIN DỰ ÁN</h4>
+                        <p style="font-size: 14px; margin-bottom: 20px;">Quý khách quan tâm vui lòng liên hệ hotline để
+                            được tư vấn chi tiết nhất.</p>
+                        <div style="text-align: center;">
+                            <p style="font-size: 24px; font-weight: 700; color: var(--secondary-orange);"
+                                class="asset-text" data-asset="hotline">0936 201 858</p>
+                            <a href="" class="contact-btn btn-nowidth phone asset-href" data-asset="hotline"
+                                style="display: inline-block; margin-top: 15px; background: var(--secondary-orange); color: white; padding: 10px 25px; border-radius: 5px; text-decoration: none; font-weight: 700;">GỌI
+                                NGAY</a>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer style="background: #111; color: white; padding: 30px 0 30px; margin-top: 100px;">
+        <div class="container" style="text-align: center; font-size: 12px;">
+            <p>&copy; 2024 Central Riverside. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../../script.js"></script>
+</body>
+
+</html>

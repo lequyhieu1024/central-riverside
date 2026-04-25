@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Riverside Thanh Hóa - Bảng Giá Chủ Đầu Tư Taseco Land</title>
+    <meta name="description"
+        content="Dự án Central Riverside Thanh Hóa nằm tại vị trí đắc địa phường Đông Hải, đối diện Vinhomes Star City. Quy mô 15.6ha với 493 lô đất liền kề biệt thự.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="assets.js"></script>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div style="background: #f8f8f8; border-bottom: 1px solid #eee; font-size: 13px; padding: 8px 0;" id="top-bar">
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <i class="fas fa-map-marker-alt"></i> <span class="asset-text" data-asset="address">Khu đô thị Central
+                    Riverside, Đại lộ Nam Sông Mã, phường Đông Hải, TP. Thanh Hoá</span>
+            </div>
+            <div>
+                <i class="fas fa-phone-alt"></i> <span class="asset-text" data-asset="hotline">0936201858</span> | <i
+                    class="fas fa-envelope"></i> <span class="asset-text"
+                    data-asset="email">info@central-riverside.com</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header" class="is-sticky">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <a href="/">
+                        <img src="" data-asset="logo" alt="Central Riverside Thanh Hóa">
+                    </a>
+                </div>
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="/">Trang Chủ</a></li>
+                        <li><a href="/vi-tri/">Vị Trí</a></li>
+                        <li><a href="/tien-ich/">Tiện Ích</a></li>
+                        <li><a href="/mat-bang/">Mặt Bằng</a></li>
+                        <li><a href="/gia-ban/">Giá Bán</a></li>
+                        <li><a href="/tin-tuc/">Tin tức</a></li>
+                        <li><a href="#contact">Liên Hệ</a></li>
+                    </ul>
+                </nav>
+                <div id="mobile-toggle" class="mobile-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-overlay" class="mobile-overlay"></div>
+    <div id="mobile-menu" class="mobile-menu">
+        <div style="text-align: right; margin-bottom: 20px;">
+            <i id="close-mobile" class="fas fa-times" style="font-size: 24px; cursor: pointer;"></i>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 20px;">
+            <a href="/" style="font-weight: 700; text-transform: uppercase;">Trang Chủ</a>
+            <a href="/vi-tri/" style="font-weight: 700; text-transform: uppercase;">Vị Trí</a>
+            <a href="/tien-ich/" style="font-weight: 700; text-transform: uppercase;">Tiện Ích</a>
+            <a href="/mat-bang/" style="font-weight: 700; text-transform: uppercase;">Mặt Bằng</a>
+            <a href="/gia-ban/" style="font-weight: 700; text-transform: uppercase;">Giá Bán</a>
+            <a href="/tin-tuc/" style="font-weight: 700; text-transform: uppercase;">Tin tức</a>
+            <a href="#contact" style="font-weight: 700; text-transform: uppercase;">Liên Hệ</a>
+        </div>
+    </div>
+
+    <main style="margin-top: 90px;">
+        <!-- Hero Slider -->
+        <section class="hero-slider" style="padding: 0;">
+            <div id="slider" class="slider-container">
+                <!-- Populated by JS -->
+            </div>
+            <div class="slider-nav">
+                <div class="nav-dot active" data-index="0"></div>
+                <div class="nav-dot" data-index="1"></div>
+                <div class="nav-dot" data-index="2"></div>
+            </div>
+        </section>
+
+        <!-- Project Overview Section -->
+        <section id="overview">
+            <div class="container">
+                <div class="section-title">
+                    <h2>TỔNG QUAN DỰ ÁN CENTRAL RIVERSIDE</h2>
+                </div>
+                <div class="row">
+                    <div class="col large-6">
+                        <table class="spec-table" style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 12px; font-weight: 700; width: 35%;">Tên dự án</td>
+                                <td style="padding: 12px;">Central Riverside</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 12px; font-weight: 700;">Vị trí</td>
+                                <td style="padding: 12px;">Phường Đông Hải, TP Thanh Hóa, tỉnh Thanh Hóa</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 12px; font-weight: 700;">Chủ đầu tư</td>
+                                <td style="padding: 12px;">Liên danh Taseco Land, Tập đoàn Taseco & BĐS Phú Mỹ</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 12px; font-weight: 700;">Tổng diện tích</td>
+                                <td style="padding: 12px;">15,6 ha</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 12px; font-weight: 700;">Loại hình</td>
+                                <td style="padding: 12px;">Shophouse, Liền kề, Biệt thự</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 12px; font-weight: 700;">Quy mô</td>
+                                <td style="padding: 12px;">493 lô đất (433 liền kề, 60 biệt thự)</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 12px; font-weight: 700;">Bàn giao</td>
+                                <td style="padding: 12px;">Xây thô hoàn thiện mặt ngoài</td>
+                            </tr>
+                            <tr style="border-bottom: 1px solid #eee;">
+                                <td style="padding: 12px; font-weight: 700;">Sở hữu</td>
+                                <td style="padding: 12px;">Sổ đỏ sở hữu lâu dài</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="col large-6">
+                        <img src="" data-asset="introImage" alt="Phối cảnh Central Riverside"
+                            style="border-radius: 10px; margin-top: 20px;">
+                        <p style="margin-top: 20px; line-height: 1.8;"><strong>Central Riverside</strong> là dự án khu
+                            đô thị tri thức và tài chính sở hữu vị trí vàng đẹp bậc nhất tại thành phố Thanh Hóa, nằm
+                            bên Đại lộ Nam Sông Mã – trục đại lộ được coi là động lực phát triển kinh tế của Thanh Hóa
+                            nói riêng, khu vực Bắc Bộ nói chung.</p>
+                        <p style="margin-top: 10px; line-height: 1.8;">Dự án được bao bọc bởi dòng sông Mã hào hùng và
+                            liền kề khu trụ sở cơ quan hành chính mới của TP Thanh Hóa, mang phong cách kiến trúc Châu
+                            Âu sang trọng, hứa hẹn trở thành trung tâm giao thương lớn hàng đầu.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Section -->
+        <section id="why-choose" class="bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>LÝ DO NÊN ĐẦU TƯ CENTRAL RIVERSIDE</h2>
+                </div>
+                <div class="row">
+                    <div class="col large-4">
+                        <div style="text-align: center; padding: 30px;">
+                            <i class="fas fa-gem"
+                                style="font-size: 40px; color: var(--accent-gold); margin-bottom: 20px;"></i>
+                            <h3>VỊ TRÍ ĐẮC ĐỊA</h3>
+                            <p style="font-size: 14px;">Tọa lạc tại "trái tim" hành chính mới, đối diện Vinhomes Star
+                                City, kết nối hạ tầng hoàn hảo.</p>
+                        </div>
+                    </div>
+                    <div class="col large-4">
+                        <div style="text-align: center; padding: 30px;">
+                            <i class="fas fa-shield-alt"
+                                style="font-size: 40px; color: var(--accent-gold); margin-bottom: 20px;"></i>
+                            <h3>PHÁP LÝ MINH BẠCH</h3>
+                            <p style="font-size: 14px;">Chủ đầu tư uy tín Taseco Land, sổ đỏ sở hữu lâu dài, bàn giao
+                                đúng tiến độ.</p>
+                        </div>
+                    </div>
+                    <div class="col large-4">
+                        <div style="text-align: center; padding: 30px;">
+                            <i class="fas fa-chart-line"
+                                style="font-size: 40px; color: var(--accent-gold); margin-bottom: 20px;"></i>
+                            <h3>TIỀM NĂNG TĂNG GIÁ</h3>
+                            <p style="font-size: 14px;">Nằm trên trục đại lộ tỷ đô Nam Sông Mã, đón đầu xu hướng mở rộng
+                                thành phố về phía Đông.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location">
+            <div class="container">
+                <div class="section-title">
+                    <h2>VỊ TRÍ "VÀNG" ĐẮC ĐỊA</h2>
+                </div>
+                <div class="row">
+                    <div class="col large-6">
+                        <p style="margin-bottom: 25px;">Tọa lạc tại vị trí “Nhất cận thị – Nhị cận giang – Tam cận lộ”,
+                            Central Riverside nằm bên Đại lộ Nam Sông Mã, đối diện Vinhomes Star City.</p>
+                        <ul style="display: flex; flex-direction: column; gap: 15px;">
+                            <li><i class="fas fa-map-marker-alt" style="color: var(--accent-gold);"></i> 1 phút tới Sở
+                                Thông Tin Và Truyền Thông</li>
+                            <li><i class="fas fa-map-marker-alt" style="color: var(--accent-gold);"></i> 2 phút tới UBND
+                                TP Thanh Hoá & Trường Vinschool</li>
+                            <li><i class="fas fa-map-marker-alt" style="color: var(--accent-gold);"></i> 4 phút tới GO!
+                                Thanh Hoá (BigC)</li>
+                            <li><i class="fas fa-map-marker-alt" style="color: var(--accent-gold);"></i> 8 phút tới Bệnh
+                                viện Đa khoa Thanh Hóa</li>
+                            <li><i class="fas fa-map-marker-alt" style="color: var(--accent-gold);"></i> 15 phút tới bãi
+                                biển Sầm Sơn</li>
+                        </ul>
+                    </div>
+                    <div class="col large-6">
+                        <img src="" data-asset="locationMap" alt="Bản đồ vị trí dự án">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Products Section -->
+        <section id="products" class="bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>CHI TIẾT SẢN PHẨM</h2>
+                </div>
+                <div class="row" style="margin-bottom: 40px;">
+                    <div class="col large-6">
+                        <div style="background: white; padding: 40px; border-radius: 10px; height: 100%;">
+                            <h3 style="color: var(--secondary-orange); margin-bottom: 20px;">SHOPHOUSE ĐẠI LỘ NAM SÔNG
+                                MÃ</h3>
+                            <p style="font-size: 14px; margin-bottom: 15px;">Dòng sản phẩm cao cấp nhất dự án, nằm trực
+                                diện mặt đường Đại lộ Nam Sông Mã rộng 67m. Đây là vị trí kinh doanh sầm uất bậc nhất.
+                            </p>
+                            <ul style="font-size: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                <li><strong>Số lượng:</strong> 94 căn</li>
+                                <li><strong>Diện tích:</strong> 104 - 197m2</li>
+                                <li><strong>Mặt tiền:</strong> 6m</li>
+                                <li><strong>Tầng cao:</strong> 4 tầng 1 tum</li>
+                                <li><strong>Sàn XD:</strong> 351m2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col large-6">
+                        <div style="background: white; padding: 40px; border-radius: 10px; height: 100%;">
+                            <h3 style="color: var(--secondary-orange); margin-bottom: 20px;">LIỀN KỀ LỚP 1 (ĐƯỜNG 14.5M)
+                            </h3>
+                            <p style="font-size: 14px; margin-bottom: 15px;">Nằm trên các trục đường nội khu rộng
+                                thoáng, kết nối trực tiếp ra các khu công viên và tiện ích trung tâm.</p>
+                            <ul style="font-size: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                <li><strong>Số lượng:</strong> 241 căn</li>
+                                <li><strong>Diện tích:</strong> 80 - 134m2</li>
+                                <li><strong>Mặt tiền:</strong> 5m</li>
+                                <li><strong>Tầng cao:</strong> 4 tầng 1 tum</li>
+                                <li><strong>Sàn XD:</strong> 336m2</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col large-6">
+                        <div style="background: white; padding: 40px; border-radius: 10px; height: 100%;">
+                            <h3 style="color: var(--secondary-orange); margin-bottom: 20px;">LIỀN KỀ LỚP 2 (ĐƯỜNG 17.5M)
+                            </h3>
+                            <p style="font-size: 14px; margin-bottom: 15px;">Không gian sống yên tĩnh, xanh mát nhưng
+                                vẫn đảm bảo tính kết nối linh hoạt tới các trục đường lớn của dự án.</p>
+                            <ul style="font-size: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                <li><strong>Số lượng:</strong> 98 căn</li>
+                                <li><strong>Diện tích:</strong> 85 - 119m2</li>
+                                <li><strong>Mặt tiền:</strong> 5m</li>
+                                <li><strong>Tầng cao:</strong> 4 tầng 1 tum</li>
+                                <li><strong>Sàn XD:</strong> 336m2</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col large-6">
+                        <div style="background: white; padding: 40px; border-radius: 10px; height: 100%;">
+                            <h3 style="color: var(--secondary-orange); margin-bottom: 20px;">BIỆT THỰ ĐẲNG CẤP</h3>
+                            <p style="font-size: 14px; margin-bottom: 15px;">Dành riêng cho cộng đồng cư dân tinh hoa,
+                                tầm nhìn thoáng đãng, không gian riêng tư bậc nhất ven sông Mã.</p>
+                            <ul style="font-size: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                <li><strong>Số lượng:</strong> 60 căn</li>
+                                <li><strong>Diện tích:</strong> 180 - 361m2</li>
+                                <li><strong>Mặt tiền:</strong> 9m</li>
+                                <li><strong>Tầng cao:</strong> 3 tầng</li>
+                                <li><strong>Đường trước:</strong> 28m</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Amenities Section -->
+        <section id="amenities">
+            <div class="container">
+                <div class="section-title">
+                    <h2>HỆ THỐNG TIỆN ÍCH ĐẲNG CẤP</h2>
+                </div>
+                <div class="row">
+                    <div class="col large-4">
+                        <div class="amenity-card">
+                            <img src="https://central-riverside.com/wp-content/uploads/2023/11/tien-ich-central-riverside-thanh-hoa-1-1920x1056.jpg"
+                                alt="Tiện ích 1">
+                            <div class="amenity-info">
+                                <h4>CÔNG VIÊN CÂY XANH</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-4">
+                        <div class="amenity-card">
+                            <img src="https://central-riverside.com/wp-content/uploads/2023/11/tien-ich-central-riverside-thanh-hoa-2-1920x1056.jpg"
+                                alt="Tiện ích 2">
+                            <div class="amenity-info">
+                                <h4>KHU TẬP GYM & BBQ</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-4">
+                        <div class="amenity-card">
+                            <img src="https://central-riverside.com/wp-content/uploads/2023/11/tien-ich-central-riverside-thanh-hoa-3-1920x1056.jpg"
+                                alt="Tiện ích 3">
+                            <div class="amenity-info">
+                                <h4>QUẢNG TRƯỜNG DẠO BỘ</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="margin-top: 40px; padding: 40px; background: #f9f9f9; border-radius: 10px;">
+                    <h4 style="color: var(--primary-teal); margin-bottom: 20px;">HƯỞNG LỢI TRỌN VẸN TỪ VINHOMES STAR
+                        CITY</h4>
+                    <p style="font-size: 14px; line-height: 1.8;">Cư dân Central Riverside còn được thừa hưởng hệ sinh
+                        thái tiện ích cao cấp ngay đối diện: Đại lộ Châu Âu, bể bơi mái kính bốn mùa, hệ thống sân thể
+                        thao (tennis, cầu lông, bóng rổ), trường học Vinschool và phòng khám Vinmec.</p>
+                    <p style="font-size: 14px; margin-top: 10px;">Toàn bộ hạ tầng nội khu dự án (điện, nước, viễn thông)
+                        được hạ ngầm 100%, vỉa hè lát đá tự nhiên Thanh Hóa bền bỉ và sang trọng.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Progress Section -->
+        <section id="progress" class="bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>TIẾN ĐỘ THI CÔNG THỰC TẾ</h2>
+                </div>
+                <div class="row">
+                    <div class="col large-6">
+                        <img src="https://central-riverside.com/wp-content/uploads/2024/01/central-riverside-thanh-hoa-2.jpg"
+                            alt="Tiến độ dự án" style="border-radius: 10px;">
+                    </div>
+                    <div class="col large-6">
+                        <h4 style="margin-bottom: 20px;">CẬP NHẬT THÁNG 04/2024</h4>
+                        <p style="font-size: 14px; line-height: 1.8;">Dự án đã hoàn thiện mặt ngoài 100% các dãy nhà
+                            Shophouse và Liền kề. Hệ thống đường nội khu đã trải nhựa 2 lớp, vỉa hè đã lát đá hoàn
+                            thiện. Cây xanh và cảnh quan đang được chăm sóc tỉ mỉ để chuẩn bị bàn giao cho khách hàng
+                            trong năm 2024.</p>
+                        <div
+                            style="margin-top: 20px; padding: 15px; border-left: 4px solid var(--accent-gold); background: white;">
+                            <p style="font-weight: 700;">Dự kiến bàn giao: Quý IV/2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Policy Section -->
+        <section id="policy">
+            <div class="container">
+                <div class="section-title">
+                    <h2>CHÍNH SÁCH BÁN HÀNG MỚI NHẤT</h2>
+                </div>
+                <div class="row">
+                    <div class="col large-12">
+                        <div
+                            style="background: #fff; padding: 40px; border: 2px dashed var(--accent-gold); border-radius: 10px;">
+                            <ul style="display: grid; grid-template-columns: 1fr 1fr; gap: 25px;">
+                                <li><i class="fas fa-gift" style="color: var(--secondary-orange);"></i> Chiết khấu lên
+                                    đến 30% khi thanh toán sớm 95%</li>
+                                <li><i class="fas fa-hand-holding-usd" style="color: var(--secondary-orange);"></i> Hỗ
+                                    trợ vay vốn lên tới 70% giá trị căn nhà</li>
+                                <li><i class="fas fa-calendar-alt" style="color: var(--secondary-orange);"></i> Ân hạn
+                                    nợ gốc lên đến 24 tháng</li>
+                                <li><i class="fas fa-file-contract" style="color: var(--secondary-orange);"></i> Pháp lý
+                                    minh bạch - Sổ đỏ sở hữu lâu dài</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Section -->
+        <section id="news" class="bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>TIN TỨC CẬP NHẬT</h2>
+                </div>
+                <div class="row">
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2026/03/the-intercentral-dong-anh-4-600x400.jpg"
+                                alt="News 1">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;"><a href="/bai-viet/chi-tiet/the-intercentral/">The
+                                        InterCentral - Hateco Đông Anh</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2025/10/viet-yen-riverside-2-600x400.jpg"
+                                alt="News 2">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;"><a href="/bai-viet/chi-tiet/viet-yen-riverside/">Việt Yên
+                                        Riverside Bắc Giang</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2025/09/taseco-1283-giai-phong-688x400.jpeg"
+                                alt="News 3">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;"><a href="/bai-viet/chi-tiet/taseco-giai-phong/">Taseco Giải
+                                        Phóng</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2025/05/masteri-rivera-da-nang-3-711x400.jpg"
+                                alt="News 4">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;">Masteri Rivera Đà Nẵng</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2025/05/capital-square-danang-2-711x400.jpg"
+                                alt="News 5">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;">BRG Capital Square Đà Nẵng</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2025/04/khu-do-thi-sao-mai-lam-son-sao-vang-tho-xuan-711x400.jpg"
+                                alt="News 6">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;">Sao Mai Residence</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2025/03/noble-palace-rvierside-cam-dinh-phuc-tho-1-717x400.jpg"
+                                alt="News 7">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;">Noble Palace Riverside</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2025/02/central-avenue-luc-nam-1-711x400.jpg"
+                                alt="News 8">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;">Central Avenue Lục Nam</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2024/11/tien-ich-central-square-711x400.jpg"
+                                alt="News 9">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;">Central Square Phổ Yên</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2024/10/the-heritage-tan-thanh-ha-nam-1-711x400.jpg"
+                                alt="News 10">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;">The Heritage Tân Thanh</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2024/09/nghi-son-central-park-1-638x400.jpg"
+                                alt="News 11">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;">Nghi Sơn Central Park</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col large-3" style="margin-bottom: 30px;">
+                        <div class="amenity-card" style="background: white; padding-bottom: 15px;">
+                            <img src="https://central-riverside.com/wp-content/uploads/2024/01/vi-tri-central-riverside-thanh-hoa-697x400.jpg"
+                                alt="News 12">
+                            <div style="padding: 15px;">
+                                <h4 style="font-size: 14px;">Vị trí Central Riverside</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col large-6">
+                        <div class="section-title" style="text-align: left;">
+                            <h2>TƯ VẤN & BÁO GIÁ</h2>
+                        </div>
+                        <p>Hệ thống sẽ gửi toàn bộ chính sách bán hàng và bảng giá chi tiết về Email và Số Điện
+                            Thoại cho Quý khách ngay lập tức.</p>
+                        <div
+                            style="margin-top: 30px; font-size: 24px; font-weight: 700; color: var(--secondary-orange);">
+                            HOTLINE: <span class="asset-text" data-asset="hotline">0936201858</span>
+                        </div>
+                    </div>
+                    <div class="col large-6">
+                        <form style="background: #f9f9f9; padding: 40px; border-radius: 10px;">
+                            <div style="margin-bottom: 20px;">
+                                <input type="text" placeholder="Họ và tên *" required
+                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                            </div>
+                            <div style="margin-bottom: 20px;">
+                                <input type="tel" placeholder="Số điện thoại *" required
+                                    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                            </div>
+                            <button type="submit"
+                                style="width: 100%; padding: 15px; background: var(--secondary-orange); color: white; border: none; border-radius: 5px; font-weight: 700; cursor: pointer;">NHẬN
+                                BÁO GIÁ NGAY</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: #111; color: white; padding: 80px 0 30px;">
+        <div class="container">
+            <div class="row">
+                <div class="col large-4">
+                    <img src="" data-asset="logo" alt="Central Riverside" style="height: 60px; margin-bottom: 25px;">
+                    <p style="color: #999; font-size: 13px;">Chủ đầu tư: Liên danh Taseco Land, Tập đoàn Taseco và BĐS
+                        Phú Mỹ.</p>
+                </div>
+                <div class="col large-4">
+                    <h4 style="margin-bottom: 25px;">LIÊN KẾT NHANH</h4>
+                    <ul style="font-size: 14px; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <li><a href="/vi-tri/">Vị trí</a></li>
+                        <li><a href="/tien-ich/">Tiện ích</a></li>
+                        <li><a href="/mat-bang/">Mặt bằng</a></li>
+                        <li><a href="/gia-ban/">Giá bán</a></li>
+                        <li><a href="/tin-tuc/">Tin tức</a></li>
+                    </ul>
+                </div>
+                <div class="col large-4">
+                    <h4 style="margin-bottom: 25px;">VĂN PHÒNG DỰ ÁN</h4>
+                    <p style="font-size: 14px; margin-bottom: 10px;"><i class="fas fa-map-marker-alt"
+                            style="color: var(--accent-gold);"></i> <span class="asset-text" data-asset="address">Khu đô
+                            thị Central Riverside, Đại lộ Nam Sông Mã, TP Thanh Hoá</span></p>
+                    <p style="font-size: 24px; color: var(--secondary-orange); font-weight: 700;" class="asset-text"
+                        data-asset="hotline">0936201858</p>
+                </div>
+            </div>
+            <div
+                style="margin-top: 60px; padding-top: 30px; border-top: 1px solid #222; text-align: center; color: #555; font-size: 12px;">
+                <p>&copy; 2024 Central Riverside. All Rights Reserved. www.central-riverside.com</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="floating-contact">
+        <a href="" class="contact-btn phone asset-href" data-asset="hotline"><i class="fas fa-phone-alt"></i></a>
+        <a href="" class="contact-btn zalo asset-href" data-asset="zaloLink"><img src="" data-asset="zaloIcon"
+                alt="Zalo" width="35"></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
