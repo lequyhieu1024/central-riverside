@@ -3,13 +3,21 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.APP_ASSETS) {
         const assets = window.APP_ASSETS;
 
-        // Detect base path from script src (e.g., "", "../", "../../")
-        const scriptTag = document.querySelector('script[src*="script.js"]');
-        const scriptSrc = scriptTag ? scriptTag.getAttribute('src') : '';
-        const basePath = scriptSrc.replace('script.js', '');
+        // Detect base path from current script location
+        let basePath = '';
+        if (document.currentScript) {
+            const src = document.currentScript.src;
+            basePath = src.substring(0, src.lastIndexOf('/') + 1);
+        } else {
+            // Fallback for older browsers
+            const scriptTag = document.querySelector('script[src*="script.js"]');
+            const scriptSrc = scriptTag ? scriptTag.getAttribute('src') : '';
+            basePath = scriptSrc.replace('script.js', '');
+        }
 
         const fixPath = (path) => {
             if (!path || path.startsWith('http') || path.startsWith('/') || path.startsWith('data:')) return path;
+            // Ensure we don't double up slashes if basePath is a full URL
             return basePath + path;
         };
         
