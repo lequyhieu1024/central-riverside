@@ -11,8 +11,10 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // Fallback for older browsers
             const scriptTag = document.querySelector('script[src*="script.js"]');
-            const scriptSrc = scriptTag ? scriptTag.getAttribute('src') : '';
-            basePath = scriptSrc.replace('script.js', '');
+            let scriptSrc = scriptTag ? scriptTag.getAttribute('src') : '';
+            // Remove query string if present
+            scriptSrc = scriptSrc.split('?')[0];
+            basePath = scriptSrc.substring(0, scriptSrc.lastIndexOf('/') + 1);
         }
 
         const fixPath = (path) => {
