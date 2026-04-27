@@ -1,11 +1,15 @@
 const APP_ASSETS = {
-    logo: "https://central-riverside.com/wp-content/uploads/2024/01/logo.jpg",
-    logoFooter: "https://central-riverside.com/wp-content/uploads/2023/11/logo-central-riverside.jpg",
+    logo: "image/logo.jpg",
+    logoFooter: "image/logo.jpg",
     zaloIcon: "https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg",
-    hotline: "0943 664 444",
-    zaloLink: "https://zalo.me/0943664444",
-    email: "info@central-riverside.com",
+    hotline: "0915 429 846",
+    zaloLink: "https://zalo.me/0915429846",
+    tiktok: "https://www.tiktok.com/@quangkienbdscaocap",
+    email: "quangkienbds@gmail.com",
     address: "Đại lộ Nam Sông Mã, phường Đông Hải, TP. Thanh Hoá",
+    managerName: "Lương Quang Kiên",
+    managerPhone: "0915 429 846",
+    managerTitle: "Giám Đốc Dự Án",
 
     // Slider images
     slider: [
