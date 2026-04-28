@@ -23,8 +23,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 587;
 
         $mail->setFrom('tranvi04nb@gmail.com', 'Central Riverside');
-//        $mail->addAddress('quangkienbds@gmail.com');
-        $mail->addAddress('lequyhieu1024@gmail.com');
+        $mail->addAddress('quangkienbds@gmail.com');
+//        $mail->addAddress('lequyhieu1024@gmail.com');
 
         $mail->isHTML(true);
         $mail->Subject = 'Khách đăng ký tư vấn';
