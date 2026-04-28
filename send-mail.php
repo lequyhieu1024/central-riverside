@@ -19,8 +19,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->SMTPSecure = 'tls';
         $mail->Port = 587;
 
-        $mail->setFrom('tranvi04nb@gmail.com', 'Website');
-        $mail->addAddress('quangkienbds@gmail.com');
+        $mail->setFrom('tranvi04nb@gmail.com', 'Central Riverside');
+//        $mail->addAddress('quangkienbds@gmail.com');
+        $mail->addAddress('lequyhieu1024@gmail.com');
 
         $mail->isHTML(true);
         $mail->Subject = 'Khách đăng ký tư vấn';
@@ -32,7 +33,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->send();
         echo "<script>
         alert('Gửi thành công');
-        window.location.href='index.html';
+        window.location.href='/';
         </script>";
         exit;
 
