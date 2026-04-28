@@ -26,9 +26,9 @@ const APP_ASSETS = {
     siteLayout: "image/z7767961529710_76ceb8a6dc2d04881d21d055ff5cd24a.jpg",
 
     // Amenities
-    amenity1: "image/z7767962131995_72294e65b55fbb1a0e5d612766ed0edf.jpg",
-    amenity2: "image/z7767961609051_e8c053b17e19cab0f69cbd09a25826a6.jpg",
-    amenity3: "image/z7767961792030_3e61082464fdcdc516f6240871793200.jpg",
+    amenity1: "image/3520202871735900968.jpg",
+    amenity2: "image/62496916752827092.jpg",
+    amenity3: "image/1494665250303363398.jpg",
 
     // Gallery images for homepage
     gallery: [
