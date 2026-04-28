@@ -104,6 +104,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>`
             ).join('');
         }
+
+        renderContactFooter();
     }
 
     const header = document.getElementById('header');
@@ -217,3 +219,70 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+
+function renderContactFooter() {
+    const el = document.getElementById('contact-footer');
+    if (!el || !window.APP_ASSETS) return;
+
+    const a = window.APP_ASSETS;
+
+    el.innerHTML = `
+        <div class="">
+            <h4 style="color: var(--accent-gold); font-size: 14px; margin-bottom: 18px; letter-spacing: 1px;">
+                ☎️ HỖ TRỢ
+            </h4>
+
+            <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 30px;">
+                <div style="background: #1a1a1a; border-radius: 8px; padding: 14px 18px; border-left: 3px solid var(--accent-gold);">
+                    <p style="color: #aaa; font-size: 12px;">${a.managerTitle}</p>
+                    <p style="color: #fff; font-weight: 700;">${a.managerName}</p>
+                    <a href="tel:${a.hotline.replace(/\s/g, '')}" 
+                       style="color: var(--secondary-orange); font-size: 18px; font-weight: 700;">
+                        ${a.hotline}
+                    </a>
+                </div>
+
+                <div style="background: #1a1a1a; border-radius: 8px; padding: 14px 18px; border-left: 3px solid var(--accent-gold);">
+                    <p style="color: #aaa; font-size: 12px;">Tiktok</p>
+                    <a href="${a.tiktok}" target="_blank"
+                       style="color: #fff; display:flex; gap:8px;">
+                        <i class="fab fa-tiktok"></i> ${a.tiktokName}
+                    </a>
+                </div>
+
+                <div style="background: #1a1a1a; border-radius: 8px; padding: 14px 18px; border-left: 3px solid var(--accent-gold);">
+                    <p style="color: #aaa; font-size: 12px;">Facebook</p>
+                    <a href="${a.facebook}" target="_blank"
+                       style="color: #fff; display:flex; gap:8px;">
+                        <i class="fab fa-facebook"></i> ${a.facebookName}
+                    </a>
+                </div>
+            </div>
+
+            <!-- Zalo -->
+            <div style="background: #1a1a1a; border-radius: 8px; padding: 14px 18px; border-left: 3px solid var(--accent-gold);">
+                <p style="color: #aaa; font-size: 12px;">Zalo</p>
+                <div style="display:flex; gap:12px; align-items:center;">
+                    <img src="/image/zalo_qr.png" style="width:100px; background:#fff; padding:4px;">
+                    <div style="color:#fff;">
+                        Quét QR để chat<br>
+                        <b style="color: var(--secondary-orange);">${a.hotline}</b>
+                    </div>
+                </div>
+            </div>
+
+            <h4 style="color: var(--accent-gold); font-size: 14px; margin-top:20px;">
+                LIÊN KẾT NHANH
+            </h4>
+
+            <ul style="font-size: 13px; display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+                <li><a href="/vi-tri/">Vị trí</a></li>
+                <li><a href="/tien-ich/">Tiện ích</a></li>
+                <li><a href="/mat-bang/">Mặt bằng</a></li>
+                <li><a href="/tin-tuc/">Tin tức</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </div>
+    `;
+}
