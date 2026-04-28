@@ -36,10 +36,7 @@ const APP_ASSETS = {
         "image/z7767962152021_f04a3b50a9970973e3dab22634cd8a6b.jpg",
         "image/z7767962155191_66425b642d4c5c396ffa3c3d06f36321.jpg",
         "image/z7767962157645_da8cb8d641c2eb9134314c776bcb7392.jpg",
-        "image/z7767962276813_5c05c9bf564397efab5bb163c708e14a.jpg",
-        "image/z7767962278836_169a26973722a9ef29ed10ca08db3800.jpg",
-        "image/z7767961800762_7ed7bd52ac2d24289a11cbbaeb86bd14.jpg",
-        "image/z7767962138156_82b4132d078d2c4522186f636ef089e0.jpg"
+        "image/z7767962276813_5c05c9bf564397efab5bb163c708e14a.jpg"
     ],
 
     // Videos

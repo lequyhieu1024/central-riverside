@@ -78,6 +78,19 @@ document.addEventListener('DOMContentLoaded', () => {
                     <img src="${fixPath(url)}" alt="Ảnh dự án Central Riverside" loading="lazy">
                 </div>`
             ).join('');
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+
+            document.querySelectorAll('#gallery-grid img').forEach(img => {
+                img.addEventListener('click', () => {
+                    lightbox.style.display = 'flex';
+                    lightboxImg.src = img.src;
+                });
+            });
+
+            lightbox.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+            });
         }
 
         // Populate video section
