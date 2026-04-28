@@ -246,7 +246,7 @@ function renderContactFooter() {
                 <div style="background: #1a1a1a; border-radius: 8px; padding: 14px 18px; border-left: 3px solid var(--accent-gold);">
                     <p style="color: #aaa; font-size: 12px;">Tiktok</p>
                     <a href="${a.tiktok}" target="_blank"
-                       style="color: #fff; display:flex; gap:8px;">
+                       style="color: #fff; display:flex; gap:8px; align-items: center;">
                         <i class="fab fa-tiktok"></i> ${a.tiktokName}
                     </a>
                 </div>
@@ -254,7 +254,7 @@ function renderContactFooter() {
                 <div style="background: #1a1a1a; border-radius: 8px; padding: 14px 18px; border-left: 3px solid var(--accent-gold);">
                     <p style="color: #aaa; font-size: 12px;">Facebook</p>
                     <a href="${a.facebook}" target="_blank"
-                       style="color: #fff; display:flex; gap:8px;">
+                       style="color: #fff; display:flex; gap:8px; align-items: center;">
                         <i class="fab fa-facebook"></i> ${a.facebookName}
                     </a>
                 </div>
