@@ -13,6 +13,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPAuth = true;
 
+        $mail->CharSet = 'UTF-8';
+        $mail->Encoding = 'base64';
+
         $mail->Username = 'tranvi04nb@gmail.com';
         $mail->Password = 'pbwh vwae nker xwqi';
 
