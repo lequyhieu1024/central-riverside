@@ -1,26 +1,42 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+require __DIR__ . '/../vendor/autoload.php';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $name = htmlspecialchars($_POST['name']);
-    $phone = htmlspecialchars($_POST['phone']);
+    $name = htmlspecialchars($_POST['name'], ENT_QUOTES, 'UTF-8');
+    $phone = htmlspecialchars($_POST['phone'], ENT_QUOTES, 'UTF-8');
 
-    $to = "quangkienbds@gmail.com";
-    $subject = "Khách đăng ký tư vấn Central Riverside";
+    $mail = new PHPMailer(true);
+    try {
+        $mail->isSMTP();
+        $mail->Host = 'smtp.gmail.com';
+        $mail->SMTPAuth = true;
 
-    $message = "
-    <h3>Thông tin khách hàng:</h3>
-    <p><strong>Họ tên:</strong> $name</p>
-    <p><strong>SĐT:</strong> $phone</p>
-    ";
+        $mail->Username = 'tranvi04nb@gmail.com';
+        $mail->Password = 'pbwh vwae nker xwqi';
 
-    $headers = "MIME-Version: 1.0" . "\r\n";
-    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-    $headers .= "From: website@yourdomain.com";
+        $mail->SMTPSecure = 'tls';
+        $mail->Port = 587;
 
-    if(mail($to, $subject, $message, $headers)) {
-        echo "<script>alert('Gửi thành công!'); window.history.back();</script>";
-    } else {
-        echo "<script>alert('Gửi thất bại!'); window.history.back();</script>";
+        $mail->setFrom('tranvi04nb@gmail.com', 'Website');
+        $mail->addAddress('quangkienbds@gmail.com');
+
+        $mail->isHTML(true);
+        $mail->Subject = 'Khách đăng ký tư vấn';
+        $mail->Body = "
+            <p>Họ tên: $name</p>
+            <p>SĐT: $phone</p>
+        ";
+
+        $mail->send();
+        echo "<script>
+        alert('Gửi thành công');
+        window.location.href='index.html';
+        </script>";
+        exit;
+
+    } catch (Exception $e) {
+        echo "Lỗi: {$mail->ErrorInfo}";
     }
 }
-?>
